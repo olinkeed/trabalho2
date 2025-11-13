@@ -7,10 +7,9 @@ class ProdutoTest {
 
     @Test
     void testConstrutorEGetters() {
-// 1. Arrange
         Produto p = new Produto(1, "Pão Francês", 0.50, 100, 1);
 
-// 3. Assert
+
         assertEquals(1, p.getId(), "ID do construtor não foi retornado corretamente");
         assertEquals("Pão Francês", p.getNome(), "Nome do construtor não foi retornado corretamente");
         assertEquals(0.50, p.getPreco(), "Preço do construtor não foi retornado corretamente");
@@ -53,4 +52,5 @@ class ProdutoTest {
         assertEquals(-19.99, p.getPreco(), "O setter de Preço deveria aceitar valor negativo (comportamento atual)");
         assertEquals(-5, p.getQuantidade(), "O setter de Quantidade deveria aceitar valor negativo (comportamento atual)");
     }
+
 }
