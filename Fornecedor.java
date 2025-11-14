@@ -21,7 +21,12 @@ public class Fornecedor {
     public void setId(int id) { this.id = id; }
 
     public String getNome() { return nome; }
-    public void setNome(String nome) { this.nome = nome; }
+    public void setNome(String nome) { 
+        if(nome!=null) {
+        this.nome = nome;
+        }else{
+        System.out.println("Nome Invalido");}
+    }
 
     public String getTelefone() { return telefone; }
     public void setTelefone(String telefone) { this.telefone = telefone; }
@@ -37,3 +42,4 @@ public class Fornecedor {
         return nome + " (" + cidade + ")";
     }
 }
+
