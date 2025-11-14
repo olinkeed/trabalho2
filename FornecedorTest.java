@@ -47,8 +47,7 @@ class FornecedorTest {
         f.setNome(null);
         f.setEmail(null);
 
-        assertNotNull(f.getNome(), "O setter de Nome deveria aceitar null (comportamento atual)");
-        assertNotNull(f.getEmail(), "O setter de Email deveria aceitar null (comportamento atual)");
+        assertNull(f.getNome(), "O setter de Nome deveria aceitar null (comportamento atual)");
+        assertNull(f.getEmail(), "O setter de Email deveria aceitar null (comportamento atual)");
     }
-
 }
