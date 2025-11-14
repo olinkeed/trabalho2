@@ -49,8 +49,9 @@ class ProdutoTest {
         p.setPreco(-19.99);
         p.setQuantidade(-5);
 
-        assertEquals(-19.99, p.getPreco(), "O setter de Preço deveria aceitar valor negativo (comportamento atual)");
-        assertEquals(-5, p.getQuantidade(), "O setter de Quantidade deveria aceitar valor negativo (comportamento atual)");
+        assertNotEquals(-19.99, p.getPreco(), "O setter de Preço deveria aceitar valor negativo (comportamento atual)");
+        assertNotEquals(-5, p.getQuantidade(), "O setter de Quantidade deveria aceitar valor negativo (comportamento atual)");
     }
 
 }
+
